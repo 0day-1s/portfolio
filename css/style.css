@@ -36,8 +36,7 @@ h1, h2, h3 { font-family: 'Space Grotesk', sans-serif; }
   border-bottom: 1px solid var(--border);
   position: sticky;
   top: 0;
-  background: rgba(10, 14, 23, 0.85);
-  backdrop-filter: blur(8px);
+  background: rgba(10, 14, 23, 0.97);
   z-index: 10;
 }
 
@@ -473,4 +472,23 @@ footer {
 .fade-in.visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* Reduce scroll jank on mobile */
+@media (max-width: 768px) {
+  .fade-in {
+    transition: opacity 0.4s ease;
+    transform: none;
+  }
+  .hero-glow {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fade-in {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
 }
