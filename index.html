@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taite Perumal | Software Developer Portfolio</title>
+  <meta name="description" content="Taite Perumal — Software Developer portfolio. Projects, tech stack, and contact details.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo">&lt;Taite Perumal /&gt;</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#tech-stack">Tech Stack</a>
+      <a href="#featured">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- HOME / HERO -->
+  <section id="home" class="hero">
+    <div class="hero-glow"></div>
+
+    <div class="hero-photo">
+      <!-- Replace src with your professional photo, e.g. images/profile.jpg -->
+      <img src="images/profile.jpg" alt="Taite Perumal" onerror="this.style.display='none'">
+    </div>
+
+    <p class="hero-tag">| Software Developer |</p>
+    <h1>Hi, I'm <span class="accent">Taite Perumal</span></h1>
+    <p class="hero-typed"><span id="typed"></span><span class="cursor">|</span></p>
+
+    <div class="hero-buttons">
+      <a href="#featured" class="btn btn-primary">View Projects</a>
+      <a href="assets/Taite_Perumal_CV.pdf" class="btn btn-outline" download>Download CV</a>
+      <a href="#contact" class="btn btn-outline">Hire Me</a>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <h2><span class="num">01.</span> About Me</h2>
+    <p>
+  I'm a first-year IT student at Rosebank College, working toward a
+  Diploma in Software Engineering. I'm proactive about learning new
+  technologies and enjoy solving problems through code — from desktop
+  applications to web platforms, with a growing focus on cybersecurity.
+</p>
+<p>
+  Through team projects I've come to value clear communication and
+  collaboration as much as technical skill. I'm currently seeking an
+  internship, learnership, or entry-level IT role where I can apply what
+  I've learned and keep growing under professional guidance.
+</p>
+  </section>
+
+  <!-- TECH STACK -->
+  <section id="tech-stack" class="section">
+    <h2><span class="num">02.</span> Tech Stack</h2>
+
+    <div class="tech-stack">
+      <div class="tech-group">
+        <h3>Languages</h3>
+        <div class="tech-pills">
+          <span class="skill-pill">HTML</span>
+          <span class="skill-pill">CSS</span>
+          <span class="skill-pill">JavaScript</span>
+          <span class="skill-pill">C#</span>
+          <span class="skill-pill">Java</span>
+          <span class="skill-pill">SQL</span>
+        </div>
+      </div>
+
+      <div class="tech-group">
+        <h3>Frameworks</h3>
+        <div class="tech-pills">
+          <span class="skill-pill">WPF</span>
+          <span class="skill-pill">ASP.NET (learning)</span>
+        </div>
+      </div>
+
+      <div class="tech-group">
+        <h3>Tools</h3>
+        <div class="tech-pills">
+          <span class="skill-pill">Git</span>
+          <span class="skill-pill">GitHub</span>
+          <span class="skill-pill">VS Code</span>
+          <span class="skill-pill">Visual Studio</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED PROJECTS -->
+  <section id="featured" class="section">
+    <h2><span class="num">03.</span> Featured Projects</h2>
+
+    <div class="featured-grid">
+
+      <article class="featured-card">
+        <div class="featured-image">
+          <!-- Replace with a real screenshot, e.g. images/cybershield.png -->
+          <img src="images/chatbot.png" alt="CyberShield chatbot screenshot" onerror="this.style.display='none'">
+        </div>
+        <div class="featured-body">
+          <h3>CyberShield — Cybersecurity Chatbot</h3>
+          <p class="featured-desc">
+            A desktop cybersecurity awareness assistant built in C# / WPF.
+            Includes a task manager, quiz system, activity logger, and a
+            multi-step NLP intent router, with all data persisted to JSON.
+          </p>
+          <div class="featured-tech">
+            <span class="tech-tag">C#</span>
+            <span class="tech-tag">WPF</span>
+            <span class="tech-tag">JSON</span>
+          </div>
+          <p class="featured-challenge">
+            <strong>Challenge solved:</strong> routing free-text user input to
+            the correct feature (task manager, quiz, or chat) reliably, using
+            a 9-step intent detection pipeline instead of fragile keyword matching.
+          </p>
+          <div class="featured-links">
+            <a href="#" target="_blank">GitHub →</a>
+            <a href="#" target="_blank">Live Demo →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="featured-card">
+        <div class="featured-image">
+          <img src="images/portfolio.png" alt="Portfolio website screenshot" onerror="this.style.display='none'">
+        </div>
+        <div class="featured-body">
+          <h3>This Portfolio</h3>
+          <p class="featured-desc">
+            A responsive developer portfolio built from scratch with vanilla
+            HTML, CSS, and JavaScript, featuring live GitHub repo integration
+            and a custom dark "developer" theme.
+          </p>
+          <div class="featured-tech">
+            <span class="tech-tag">HTML</span>
+            <span class="tech-tag">CSS</span>
+            <span class="tech-tag">JavaScript</span>
+          </div>
+          <p class="featured-challenge">
+            <strong>Challenge solved:</strong> pulling live repository data
+            from the GitHub API and rendering it as styled project cards
+            without a build tool or framework.
+          </p>
+         <div class="featured-links">
+        <a href="https://github.com/Rosebank-College-PROG5121-Group-2/Cybersecurity-Awarness-Chatbot.git" target="_blank">GitHub →</a>
+        </div>
+        </div>
+      </article>
+
+      <article class="featured-card">
+        <div class="featured-image">
+          <img src="images/login-system.png" alt="Java login system screenshot" onerror="this.style.display='none'">
+        </div>
+        <div class="featured-body">
+          <h3>Login System</h3>
+          <p class="featured-desc">
+            A user authentication system built in Java, covering input
+            validation, credential storage, and basic security practices
+            for handling user accounts.
+          </p>
+          <div class="featured-tech">
+            <span class="tech-tag">Java</span>
+          </div>
+          <p class="featured-challenge">
+            <strong>Challenge solved:</strong> validating and securely
+            handling user credentials without relying on a database engine.
+          </p>
+          <div class="featured-links">
+            <a href="#" target="_blank">GitHub →</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- GITHUB PROJECTS (auto-pulled) -->
+  <section id="projects" class="section">
+    <h2><span class="num">04.</span> From GitHub</h2>
+    <p class="section-note">Live feed of my most recently updated repositories.</p>
+    <div id="projects-container" class="projects-grid">
+      <div class="project-card skeleton"></div>
+      <div class="project-card skeleton"></div>
+      <div class="project-card skeleton"></div>
+    </div>
+  </section>
+
+  <!-- STATISTICS -->
+  <section id="stats" class="section stats-section">
+    <div class="stats-grid">
+      <div class="stat-card">
+        <span class="stat-number" data-target="15">0</span>+
+        <p>Projects</p>
+      </div>
+      <div class="stat-card">
+        <span class="stat-number" data-target="2">0</span>+
+        <p>Years Programming</p>
+      </div>
+      <div class="stat-card">
+        <span class="stat-number" data-target="6">0</span>+
+        <p>Languages</p>
+      </div>
+      <div class="stat-card">
+        <span class="stat-number" data-target="100">0</span>%
+        <p>Committed</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE TIMELINE -->
+  <section id="experience" class="section">
+    <h2><span class="num">05.</span> Experience</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <span class="timeline-year">2025</span>
+        <p>Started Software Development studies</p>
+      </div>
+      <div class="timeline-item">
+        <span class="timeline-year">2025</span>
+        <p>Built Java console &amp; logic projects</p>
+      </div>
+      <div class="timeline-item">
+        <span class="timeline-year">2026</span>
+        <p>Built C# desktop applications (WPF)</p>
+      </div>
+      <div class="timeline-item">
+        <span class="timeline-year">2026</span>
+        <p>Built and launched this portfolio website</p>
+      </div>
+      <div class="timeline-item future">
+        <span class="timeline-year">Next</span>
+        <p>Internship</p>
+      </div>
+      <div class="timeline-item future">
+        <span class="timeline-year">Future</span>
+        <p>Graduate Software Developer</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CURRENTLY LEARNING -->
+  <section id="learning" class="section">
+    <h2><span class="num">06.</span> Currently Learning</h2>
+    <div class="skills-grid">
+      <span class="skill-pill learning">ASP.NET</span>
+      <span class="skill-pill learning">React</span>
+      <span class="skill-pill learning">Cybersecurity</span>
+      <span class="skill-pill learning">Cloud Computing</span>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact">
+    <h2><span class="num">07.</span> Contact</h2>
+    <p>Email: <a href="mailto:taiteperumal952@gmail.com">taiteperumal952@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/0day-1s" target="_blank">github.com/0day-1s</a></p>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/taite-perumal-738108382/" target="_blank">linkedin.com/in/taite-perumal</a></p>
+    <p>Resume: <a href="assets/Taite_Perumal_CV.pdf" download>Download CV (PDF)</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Taite Perumal. Built with HTML, CSS &amp; JS.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
